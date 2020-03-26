@@ -1,3 +1,3 @@
-module github.com/flyaways/pool
+module github.com/LiSheep/pool
 
 go 1.12
