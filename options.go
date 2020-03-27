@@ -77,7 +77,7 @@ func NewOptions() *Options {
 // validate checks a Config instance.
 func (o *Options) validate() error {
 	if o.InitTargets == nil ||
-		o.InitCap <= 0 ||
+		o.InitCap < 0 ||
 		o.MaxCap <= 0 ||
 		o.InitCap > o.MaxCap ||
 		o.DialTimeout == 0 ||
